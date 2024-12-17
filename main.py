@@ -14,4 +14,5 @@ app = FastAPI(
 )
 
 # Include routers
+# allows for all endpoints in book.router available at /books
 app.include_router(book.router, tags=["books"])
